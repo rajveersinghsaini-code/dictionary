@@ -1,0 +1,155 @@
+html,
+body {
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+p {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+footer,
+header,
+main,
+section {
+  display: block;
+  margin: 0;
+}
+section {
+  padding: 0.5rem;
+  margin-bottom: 5rem;
+}
+main {
+  background-color: #fff;
+  position: relative;
+  min-height: 100vh;
+}
+.wrapper {
+  margin: auto;
+  max-width: 60rem;
+}
+.header {
+  background-color: rgb(53 105 252);
+}
+
+.content {
+  flex: 1;
+}
+.footer {
+  padding: 1.25rem;
+  background: #1a1a1a;
+  width: 100%;
+  color: #fff;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media screen and (min-width: 640px) {
+  .flex-container {
+    display: flex;
+  }
+}
+/*Logo of the Klick Health*/
+.logo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: flex-start;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.2rem;
+}
+/*Logo Text*/
+.logo::after {
+  content: "Dictionary";
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/*Search Container*/
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0px;
+}
+.search-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.search-input {
+  width: 100%;
+  border: 1px solid rgb(3 67 251);
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-button {
+  width: 40px;
+  height: 36px;
+  border: 1px solid rgb(3 67 251);
+  background: rgb(3 67 251);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+#search_result {
+  padding-top: 0.7rem;
+}
+.result-card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+.audio-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 8px;
+  position: relative;
+}
+.font-bold {
+  font-weight: bold;
+}
+.definition-paragraph {
+  font-weight: normal;
+}
+.definition-example {
+  color: grey;
+  padding-left: 5px;
+}
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  color: #212529;
+  background-color: #f8f9fa;
+  margin-right: 0.15rem;
+  margin-bottom: 0.15rem;
+  border: 1px solid #c6bdbd;
+}
