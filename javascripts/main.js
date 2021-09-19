@@ -120,6 +120,9 @@ const createMeaningsCard = (meaningJson) => {
             let synonymsText = document.createElement("span");
             synonymsText.className = "badge";
             synonymsText.append(document.createTextNode(synonyms));
+            synonymsText.addEventListener("click", function () {
+              synonymsAntonymsClick(synonyms);
+            });
             divMeaningCard.append(synonymsText);
           });
         }
@@ -133,6 +136,9 @@ const createMeaningsCard = (meaningJson) => {
             let antonymsText = document.createElement("span");
             antonymsText.className = "badge";
             antonymsText.append(document.createTextNode(antonyms));
+            antonymsText.addEventListener("click", function () {
+              synonymsAntonymsClick(antonyms);
+            });
             divMeaningCard.append(antonymsText);
           });
         }
@@ -142,6 +148,11 @@ const createMeaningsCard = (meaningJson) => {
     }
   }
   return divMeaningCard;
+};
+
+const synonymsAntonymsClick = (searchText) =>{
+  document.querySelector("#search_input").value = searchText;
+  fetchDefinition();
 };
 
 //Make Dictionary API Call and generate dynamic result

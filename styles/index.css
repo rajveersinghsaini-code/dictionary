@@ -161,4 +161,5 @@ input {
   margin-right: 0.15rem;
   margin-bottom: 0.15rem;
   border: 1px solid #c6bdbd;
+  cursor: pointer;
 }
