@@ -1,9 +1,8 @@
-# Simple Online English Dictionary - Klick Health's Take Home Assignment
+# Simple Online English Dictionary - Created in pure javascript
 
-This project is created in simple JavaScript and HTML to achieve Klick Health's take home assignment.
+This project is created in simple JavaScript and HTML.
 
 http://dictionary.rajveersinghsaini.com/
-
 
 ## License
 
